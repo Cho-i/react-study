@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect, useRef } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const inputRef = useRef();
+	const containerRef = useRef();
+
+	useEffect(() => {
+		console.log(inputRef);
+		console.log(containerRef);
+		inputRef.current.focus();
+	}, []);
+
+	const loginAlert = () => {
+		console.log(`환영합니다. ${inputRef.current.value}`);
+		inputRef.current.focus();
+	}
+
+	return (
+		<div className="App">
+			<input type="text" ref={inputRef} placeholder="ID" />
+			<button onClick={loginAlert}>Login</button>
+			<div ref={containerRef} className="container"></div>
+		</div>
+	);
 }
 
 export default App;
