@@ -13,13 +13,17 @@ import reportWebVitals from './reportWebVitals';
 //import ConfirmButton from './chapter_08/ConfirmButton';
 //import MainPage from './chapter_09/MainPage';
 //import LandingPage from './chapter_09/LandingPage';
-import AttendanceBook from './chapter_10/AttendanceBook';
+//import AttendanceBook from './chapter_10/AttendanceBook';
+//import NameForm from './chapter_11/NameForm';
+//import FruitSelect from './chapter_11/FruitSelect';
+//import Reservation from './chapter_11/Reservation';
+import SignUp from './chapter_11/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 	<React.StrictMode>
-		<AttendanceBook />
+		<SignUp />
 	</React.StrictMode>
 );
 
