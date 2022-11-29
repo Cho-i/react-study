@@ -17,13 +17,14 @@ import reportWebVitals from './reportWebVitals';
 //import NameForm from './chapter_11/NameForm';
 //import FruitSelect from './chapter_11/FruitSelect';
 //import Reservation from './chapter_11/Reservation';
-import SignUp from './chapter_11/SignUp';
+//import SignUp from './chapter_11/SignUp';
+import Calculator from './chapter_12/Calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 	<React.StrictMode>
-		<SignUp />
+		<Calculator />
 	</React.StrictMode>
 );
 
